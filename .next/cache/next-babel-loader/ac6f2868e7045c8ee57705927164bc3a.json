@@ -1,0 +1,17 @@
+{
+  "ast": null,
+  "code": "import styled from \"styled-components\";\nexport const Container = styled.div`\n  max-width: 960px;\n  margin: 0 auto;\n  background-color: #e8e8e8;\n  padding: 1%;\n`;\nexport const Footer = styled.footer``;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "/Users/oktayibis/Desktop/next/octovan-web/styles/LayoutStyles/index.js"
+    ],
+    "names": ["styled", "Container", "div", "Footer", "footer"],
+    "mappings": "AAAA,OAAOA,MAAP,MAAmB,mBAAnB;AAEA,OAAO,MAAMC,SAAS,GAAGD,MAAM,CAACE,GAAI;;;;;CAA7B;AAOP,OAAO,MAAMC,MAAM,GAAGH,MAAM,CAACI,MAAO,EAA7B",
+    "sourcesContent": [
+      "import styled from \"styled-components\";\n\nexport const Container = styled.div`\n  max-width: 960px;\n  margin: 0 auto;\n  background-color: #e8e8e8;\n  padding: 1%;\n`;\n\nexport const Footer = styled.footer``"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

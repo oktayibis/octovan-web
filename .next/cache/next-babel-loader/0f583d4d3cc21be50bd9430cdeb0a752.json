@@ -1,0 +1,17 @@
+{
+  "ast": null,
+  "code": "import styled from \"styled-components\";\nexport const Main = styled.div`\n  max-width: 960px;\n  margin: 0 auto;\n  background-color: #e8e8e8;\n  padding: 1%;\n`;\nexport const Footer = styled.footer`\n  text-align: center;\n  margin: 0 auto;\n  background-color: azure;\n  padding: 1%;\n  max-width: 960px;\n  margin-top: 1em;\n`;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "/Users/oktayibis/Desktop/next/octovan-web/styles/LayoutStyles/index.js"
+    ],
+    "names": ["styled", "Main", "div", "Footer", "footer"],
+    "mappings": "AAAA,OAAOA,MAAP,MAAmB,mBAAnB;AAEA,OAAO,MAAMC,IAAI,GAAGD,MAAM,CAACE,GAAI;;;;;CAAxB;AAOP,OAAO,MAAMC,MAAM,GAAGH,MAAM,CAACI,MAAO;;;;;;;CAA7B",
+    "sourcesContent": [
+      "import styled from \"styled-components\";\n\nexport const Main = styled.div`\n  max-width: 960px;\n  margin: 0 auto;\n  background-color: #e8e8e8;\n  padding: 1%;\n`;\n\nexport const Footer = styled.footer`\n  text-align: center;\n  margin: 0 auto;\n  background-color: azure;\n  padding: 1%;\n  max-width: 960px;\n  margin-top: 1em;\n`;\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

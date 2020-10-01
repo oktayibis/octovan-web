@@ -1,0 +1,27 @@
+{
+  "ast": null,
+  "code": "import styled from \"styled-components\";\nimport { Colors } from \"../constant\";\nexport var Main = styled.div.withConfig({\n  displayName: \"LayoutStyles__Main\",\n  componentId: \"sc-1l7k1x8-0\"\n})([\"max-width:960px;margin:0 auto;background-color:\", \";padding:1%;border-radius:10px;\"], Colors.light);\nexport var Footer = styled.footer.withConfig({\n  displayName: \"LayoutStyles__Footer\",\n  componentId: \"sc-1l7k1x8-1\"\n})([\"text-align:center;margin:0 auto;background-color:\", \";padding:1%;max-width:960px;margin-top:1em;border-radius:10px;color:\", \";\"], Colors.medium, Colors.lightText);",
+  "map": {
+    "version": 3,
+    "sources": [
+      "/Users/oktayibis/Desktop/next/octovan-web/styles/LayoutStyles/index.js"
+    ],
+    "names": [
+      "styled",
+      "Colors",
+      "Main",
+      "div",
+      "light",
+      "Footer",
+      "footer",
+      "medium",
+      "lightText"
+    ],
+    "mappings": "AAAA,OAAOA,MAAP,MAAmB,mBAAnB;AACA,SAASC,MAAT,QAAuB,aAAvB;AAEA,OAAO,IAAMC,IAAI,GAAGF,MAAM,CAACG,GAAV;AAAA;AAAA;AAAA,2FAGKF,MAAM,CAACG,KAHZ,CAAV;AAQP,OAAO,IAAMC,MAAM,GAAGL,MAAM,CAACM,MAAV;AAAA;AAAA;AAAA,uIAGGL,MAAM,CAACM,MAHV,EAQRN,MAAM,CAACO,SARC,CAAZ",
+    "sourcesContent": [
+      "import styled from \"styled-components\";\nimport { Colors } from \"../constant\";\n\nexport const Main = styled.div`\n  max-width: 960px;\n  margin: 0 auto;\n  background-color: ${Colors.light};\n  padding: 1%;\n  border-radius: 10px;\n`;\n\nexport const Footer = styled.footer`\n  text-align: center;\n  margin: 0 auto;\n  background-color: ${Colors.medium};\n  padding: 1%;\n  max-width: 960px;\n  margin-top: 1em;\n  border-radius: 10px;\n  color: ${Colors.lightText};\n`;\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

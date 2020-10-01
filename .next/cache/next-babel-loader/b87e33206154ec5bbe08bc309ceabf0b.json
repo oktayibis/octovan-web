@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "var _jsxFileName = \"/Users/oktayibis/Desktop/next/octovan-web/pages/index.js\";\nimport React from \"react\";\nvar __jsx = React.createElement;\nimport Link from \"next/link\";\nimport { Layout } from \"../styles/Layout\";\n\nfunction HomePage() {\n  return __jsx(Layout, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 5,\n      columnNumber: 12\n    }\n  }, __jsx(\"h1\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 6,\n      columnNumber: 9\n    }\n  }, \"Octovan \"), __jsx(Link, {\n    href: \"/detail\",\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7,\n      columnNumber: 9\n    }\n  }, __jsx(\"a\", {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7,\n      columnNumber: 32\n    }\n  }, \"Hakk\\u0131nda\")));\n}\n\n_c = HomePage;\nexport default HomePage;\n\nvar _c;\n\n$RefreshReg$(_c, \"HomePage\");",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/oktayibis/Desktop/next/octovan-web/pages/index.js"],
+    "names": ["Link", "Layout", "HomePage"],
+    "mappings": ";;;AAAA,OAAOA,IAAP,MAAiB,WAAjB;AAEA,SAASC,MAAT,QAAuB,kBAAvB;;AACA,SAASC,QAAT,GAAoB;AAChB,SAAO,MAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACH;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,gBADG,EAEH,MAAC,IAAD;AAAM,IAAA,IAAI,EAAE,SAAZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAAuB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBAAvB,CAFG,CAAP;AAIH;;KALQA,Q;AAOT,eAAeA,QAAf",
+    "sourcesContent": [
+      "import Link from \"next/link\"\n\nimport { Layout } from \"../styles/Layout\";\nfunction HomePage (){\n    return <Layout>\n        <h1>Octovan </h1>\n        <Link href={\"/detail\"}><a>Hakkında</a></Link>\n    </Layout>\n}\n\nexport default HomePage\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

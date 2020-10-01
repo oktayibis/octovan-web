@@ -1,0 +1,17 @@
+{
+  "ast": null,
+  "code": "import styled from \"styled-components\";\nimport { Colors } from \"../constant\";\nexport const Title = styled.h1.withConfig({\n  displayName: \"TextStyles__Title\",\n  componentId: \"sc-1rpgm30-0\"\n})([\"color:\", \";text-align:center;padding:10px;\"], Colors.dark);",
+  "map": {
+    "version": 3,
+    "sources": [
+      "/Users/oktayibis/Desktop/next/octovan-web/styles/TextStyles/index.js"
+    ],
+    "names": ["styled", "Colors", "Title", "h1", "dark"],
+    "mappings": "AAAA,OAAOA,MAAP,MAAmB,mBAAnB;AACA,SAASC,MAAT,QAAuB,aAAvB;AAEA,OAAO,MAAMC,KAAK,GAAGF,MAAM,CAACG,EAAV;AAAA;AAAA;AAAA,mDACPF,MAAM,CAACG,IADA,CAAX",
+    "sourcesContent": [
+      "import styled from \"styled-components\";\nimport { Colors } from \"../constant\";\n\nexport const Title = styled.h1`\n  color: ${Colors.dark};\n  text-align: center;\n  padding: 10px;\n`;\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

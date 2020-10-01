@@ -1,0 +1,15 @@
+{
+  "ast": null,
+  "code": "export var Colors = {\n  light: \"#EDE7F6\",\n  // Deep purple light\n  lightText: \"#d1c3e9\",\n  // Light Text Color\n  medium: \"#673ab6\",\n  dark: \"#311B92\"\n};",
+  "map": {
+    "version": 3,
+    "sources": ["/Users/oktayibis/Desktop/next/octovan-web/styles/constant.js"],
+    "names": ["Colors", "light", "lightText", "medium", "dark"],
+    "mappings": "AAAA,OAAO,IAAMA,MAAM,GAAG;AACpBC,EAAAA,KAAK,EAAE,SADa;AACF;AAClBC,EAAAA,SAAS,EAAE,SAFS;AAEE;AACtBC,EAAAA,MAAM,EAAE,SAHY;AAIpBC,EAAAA,IAAI,EAAE;AAJc,CAAf",
+    "sourcesContent": [
+      "export const Colors = {\n  light: \"#EDE7F6\", // Deep purple light\n  lightText: \"#d1c3e9\", // Light Text Color\n  medium: \"#673ab6\",\n  dark: \"#311B92\",\n};\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}
