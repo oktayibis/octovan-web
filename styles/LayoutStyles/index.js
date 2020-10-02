@@ -3,7 +3,7 @@ import { Colors } from "../constant";
 
 export const Main = styled.div`
   max-width: 960px;
-  margin: 0 auto;
+  margin: 3% auto;
   background-color: ${Colors.light};
   padding: 1%;
   border-radius: 10px;
@@ -18,4 +18,10 @@ export const Footer = styled.footer`
   margin-top: 1em;
   border-radius: 10px;
   color: ${Colors.lightText};
+`;
+
+export const NavContainer = styled.div`
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 `;

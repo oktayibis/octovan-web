@@ -6,3 +6,8 @@ export const Title = styled.h1`
   text-align: center;
   padding: 10px;
 `;
+
+export const TotalPage = styled.h4`
+  color: ${Colors.medium};
+  text-align: center;
+`;

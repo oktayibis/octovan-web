@@ -2,37 +2,41 @@ import Link from "next/link";
 import Axios from "axios";
 import Layout from "../components/Layout";
 import { getPaxPerPage } from "../lib/api";
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Card from "../components/Card";
+import Nav from "../components/Navigation";
+import { TotalPage } from "../styles/TextStyles";
 
 function HomePage(props) {
-  const [pageNo, setPageNo] = React.useState(0);
   const router = useRouter();
-
-  useEffect(() => {
-    const { pathname, query } = router;
-    console.log("path", pathname);
-    console.log("query,", query);
-    console.log("page", pageNo);
-  }, [pageNo]);
+  const { query } = router;
+  
+  // If page loading initially, we assaign as a page 1
+  const pageNo = parseInt(query.page) || 1;
 
   return (
     <Layout>
-      <button onClick={() => setPageNo(pageNo + 1)}>+</button>
-      {props.list ? (
-        props.list.map((item) => <Card name={item.name} id={item._id} />)
-      ) : (
-        <h2>Loading</h2>
-      )}
+      {props.list.map((item) => (
+        <Card key={item._id} name={item.name} id={item._id} />
+      ))}
+      <TotalPage>
+        Pages: {pageNo} / {props.totalPage}
+      </TotalPage>
+      <Nav
+        onClickNext={() => {
+          router.push(`?page=${pageNo + 1}`);
+        }}
+        onClickPrev={() => {
+          router.push(`?page=${pageNo - 1}`);
+        }}
+      />
     </Layout>
   );
 }
 
-export const getStaticProps = async (ctx) => {
-  console.log("contex", ctx);
-  const response = await getPaxPerPage(0);
-
+export const getServerSideProps = async (ctx) => {
+  const page = parseInt(ctx.query.page);
+  const response = await getPaxPerPage(page);
   return {
     props: {
       list: response.data.data,
