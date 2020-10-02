@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
 
   &:hover {
     cursor: pointer;
-    background-color: lightgrey;
+    background-color: ${Colors.lightText};
   }
 `;
 

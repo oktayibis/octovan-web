@@ -25,3 +25,18 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
 `;
+
+export const Image = styled.img`
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+`;
+
+export const RowContainer = styled.div`
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: auto auto;
+  grid-gap: 6%;
+  align-items: center;
+  margin: 1%;
+`;

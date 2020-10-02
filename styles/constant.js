@@ -1,6 +1,8 @@
 export const Colors = {
-  light: "#EDE7F6", // Deep purple light
-  lightText: "#d1c3e9", // Light Text Color
-  medium: "#673ab6",
-  dark: "#311B92",
+  light: "#faf5e4", // light wheat
+  lightText: "#fbfadf", // light blue
+  medium: "#2c786c", // medium green
+  dark: "#004445", // dark green
+  primary: "#f8b400", // dark yellow
+  secondary: "#00587a", // medium dark blue
 };

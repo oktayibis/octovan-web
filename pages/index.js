@@ -10,7 +10,7 @@ import { TotalPage } from "../styles/TextStyles";
 function HomePage(props) {
   const router = useRouter();
   const { query } = router;
-  
+
   // If page loading initially, we assaign as a page 1
   const pageNo = parseInt(query.page) || 1;
 
@@ -29,6 +29,7 @@ function HomePage(props) {
         onClickPrev={() => {
           router.push(`?page=${pageNo - 1}`);
         }}
+        prevDisabled={pageNo === 1 ? true : false}
       />
     </Layout>
   );

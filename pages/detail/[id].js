@@ -1,11 +1,57 @@
-import Layout from "../../components/Layout";
-import { getPaxDetails } from "../../lib/api";
-function Detail(props) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
+import Layout from "../../components/Layout";
+import { getPaxDetails, changePaxName } from "../../lib/api";
+import { SubTitle, Text } from "../../styles/TextStyles";
+import { Image, RowContainer } from "../../styles/LayoutStyles";
+import { EditButton } from "../../styles/ButtonStyles";
+import Modal from "../../components/Modal";
+function Detail(props) {
+  const [isModalVisible, setisModalVisible] = React.useState(false);
+  const [name, setName] = React.useState(props.passanger.name);
+
+  const handleNameChange = async () => {
+    changePaxName(props.passanger._id, name)
+      .then(() => {
+        setisModalVisible(false);
+        setName(name);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  const handleCloseModal = () => {
+    setName(props.passanger.name);
+    setisModalVisible(false);
+  };
   return (
     <Layout>
+      <RowContainer>
+        <div>
+          <SubTitle fontbig>
+            Name: {name}
+            <EditButton onClick={() => setisModalVisible(true)}>
+              <FontAwesomeIcon icon={faEdit} />
+            </EditButton>
+          </SubTitle>
+          <Text>Trips: {props.passanger.trips}</Text>
+        </div>
+        <div>
+          <Image src={props.passanger.airline.logo} />
+          <SubTitle center>Airline: {props.passanger.airline.name}</SubTitle>
+        </div>
+      </RowContainer>
 
-      <p>{props.passanger.name}</p>
+      {isModalVisible && (
+        <Modal
+          handleChange={handleNameChange}
+          setVisible={handleCloseModal}
+          value={name}
+          setValue={(e) => setName(e.target.value)}
+        />
+      )}
     </Layout>
   );
 }
