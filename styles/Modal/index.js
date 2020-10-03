@@ -27,4 +27,7 @@ export const ModalInput = styled.input`
   width: 90%;
   border: 1px solid;
   border-color: ${Colors.light};
+  &:focus {
+    background-color: ${Colors.light};
+  }
 `;
