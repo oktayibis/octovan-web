@@ -2,8 +2,8 @@ import {
   ModalContainer,
   ModalContent,
   ModalInput,
-  ModalVisible,
 } from "../../styles/Modal";
+
 import { RowContainer } from "../../styles/LayoutStyles";
 import { Button } from "../../styles/ButtonStyles";
 function Modal(props) {

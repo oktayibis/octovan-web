@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 import { Main, Footer } from "../../styles/LayoutStyles";
 import { Title } from "../../styles/TextStyles";
 
