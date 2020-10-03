@@ -1,8 +1,4 @@
-import {
-  ModalContainer,
-  ModalContent,
-  ModalInput,
-} from "../../styles/Modal";
+import { ModalContainer, ModalContent, ModalInput } from "../../styles/Modal";
 
 import { RowContainer } from "../../styles/LayoutStyles";
 import { Button } from "../../styles/ButtonStyles";

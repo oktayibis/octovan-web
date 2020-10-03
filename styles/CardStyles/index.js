@@ -11,11 +11,9 @@ export const CardContainer = styled.div`
   align-items: center;
   height: 6vh;
   border: 1px solid transparent;
-
   &:hover {
     cursor: pointer;
     background-color: ${Colors.lightText};
-    border: 1px solid;
     border-color: ${Colors.medium};
   }
 `;

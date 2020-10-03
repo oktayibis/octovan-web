@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Axios from "axios";
 import Layout from "../components/Layout";
 import { getPaxPerPage } from "../lib/api";
 import { useRouter } from "next/router";

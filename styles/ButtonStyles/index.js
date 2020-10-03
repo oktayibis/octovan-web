@@ -20,6 +20,7 @@ export const Button = styled.div`
       props.variant === "Primary" ? "#ff9a3c" : Colors.dark};
   }
 `;
+
 export const EditButton = styled.button`
   padding: 5px;
   margin-left: 10px;
