@@ -27,36 +27,35 @@ function Detail(props) {
     setisModalVisible(false);
   };
   return (
-    
-      <Layout>
-        <Head>
-          <title>{props.passanger.name} Detail Page</title>
-        </Head>
-        <RowContainer>
-          <div>
-            <SubTitle fontbig>
-              Name: {name}
-              <EditButton onClick={() => setisModalVisible(true)}>
-                <FontAwesomeIcon icon={faEdit} />
-              </EditButton>
-            </SubTitle>
-            <Text>Trips: {props.passanger.trips}</Text>
-          </div>
-          <div>
-            <Image src={props.passanger.airline.logo} />
-            <SubTitle center>Airline: {props.passanger.airline.name}</SubTitle>
-          </div>
-        </RowContainer>
+    <Layout>
+      <Head>
+        <title>{props.passanger.name} Detail Page</title>
+      </Head>
+      <RowContainer>
+        <div>
+          <SubTitle fontbig>
+            <Text>Name:</Text> {name}
+            <EditButton onClick={() => setisModalVisible(true)}>
+              <FontAwesomeIcon size="sm" icon={faEdit} />
+            </EditButton>
+          </SubTitle>
+          <Text>Trips: {props.passanger.trips}</Text>
+        </div>
+        <div>
+          <Image src={props.passanger.airline.logo} />
+          <SubTitle center>Airline: {props.passanger.airline.name}</SubTitle>
+        </div>
+      </RowContainer>
 
-        {isModalVisible && (
-          <Modal
-            handleChange={handleNameChange}
-            setVisible={handleCloseModal}
-            value={name}
-            setValue={(e) => setName(e.target.value)}
-          />
-        )}
-      </Layout>
+      {isModalVisible && (
+        <Modal
+          handleChange={handleNameChange}
+          setVisible={handleCloseModal}
+          value={name}
+          setValue={(e) => setName(e.target.value)}
+        />
+      )}
+    </Layout>
   );
 }
 

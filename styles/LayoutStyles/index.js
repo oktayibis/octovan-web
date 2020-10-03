@@ -28,7 +28,7 @@ export const NavContainer = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  max-height: 300px;
+  max-height: 6vw;
   object-fit: contain;
 `;
 

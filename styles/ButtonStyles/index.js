@@ -22,11 +22,11 @@ export const Button = styled.div`
 `;
 export const EditButton = styled.button`
   padding: 5px;
-  margin: 5px;
   margin-left: 10px;
   background-color: ${Colors.medium};
   border: none;
   color: white;
+  border-radius: 5px;
   &:hover {
     cursor: pointer;
     background-color: ${Colors.dark};

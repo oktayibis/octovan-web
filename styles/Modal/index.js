@@ -4,21 +4,19 @@ export const ModalVisible = styled.div`
   display: ${(props) => (props.visible ? "block" : "none")};
 `;
 export const ModalContainer = styled.div`
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 20%;
-  top: 20%;
-  right: 20%;
-  overflow: auto; /* Enable scroll if needed */
+  position: fixed;
+  z-index: 1;
   box-shadow: 6px -2px 18px 2px rgba(0, 0, 0, 0.75);
   background-color: #fff;
   border-radius: 10px;
   width: 20em;
   height: 15em;
+  top: 10vw;
+  left: 30%;
 `;
 
 export const ModalContent = styled.div`
-  padding: 20px;
+  padding: 2em;
   align-items: center;
   justify-content: center;
 `;

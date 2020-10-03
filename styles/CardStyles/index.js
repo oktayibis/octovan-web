@@ -9,17 +9,20 @@ export const CardContainer = styled.div`
   margin: 10px auto;
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 6vh;
 
   &:hover {
     cursor: pointer;
     background-color: ${Colors.lightText};
+    border: 1px solid;
+    border-color: ${Colors.medium};
   }
 `;
 
 export const CardText = styled.h3`
   color: ${Colors.dark};
   margin-left: 5%;
+  font-size: 1rem;
 `;
 
 export const CardLabel = styled.span`
